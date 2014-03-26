@@ -23,10 +23,3 @@ include(DB.'brewer.db.php');
    title="Download Your Scoresheets" 
    id="generate_scoresheets" 
    class="data">Download Your Scoresheets</a>
-
-<?php
-
-// $zipfilenamne=$_SESSION['contestName']+ '_' + $row_brewer['brewerFirstName'] + '_' + $row_brewer['brewerLastName'] + '.zip';
-// Print_r ($_SESSION);
-// echo $zipfilename;
-?>
