@@ -13,13 +13,11 @@ $zipname=$zipfilename;
 // 	echo $contestName;
 // 	Print_r($row_log);
 if($zip->open($zipname, ZIPARCHIVE::CREATE) == TRUE) {
-	//do {
+	do {
 	//for each entry
-	//$zip->addFile('/scoresheets/' + $row_log['id'] + '.pdf');
 	$entryNum = sprintf("%04s",$row_log['id']);
 	$zip->addFile("../scoresheets/".$entryNum.".pdf", $entryNum.".pdf");
-	//} while ($row_log = mysql_fetch_assoc($log));
-
+	} while ($row_log = mysql_fetch_assoc($log));
 	// close zip file
 	$zip->close();
 } else {
