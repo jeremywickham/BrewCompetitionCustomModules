@@ -3,6 +3,13 @@ BrewCompetitionCustomModules
 
 Brewer Scoresheets
 ==================
+About
+-
+This will show a link on the page for the entrant to download a zip file of their entry's score sheet for the competition. The zip file will be named <Competition Name>_<First Name>_<Last Name>.zip and will contain all of the score sheets for that entrant. The score sheet type must be a PDF. 
+
+Installation and Configruation
+-
+
 Create directory on your webserver in the brew competition directory called 'scoresheets'
 
 Add the .htaccess file to disable anyone from browsing the directory
