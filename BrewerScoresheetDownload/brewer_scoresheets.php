@@ -18,8 +18,8 @@
 
 include(DB.'brewer.db.php');
 ?>
-
+<br/>
 <a href="<?php echo $base_url; ?>mods/generate_brewer_scoresheets.php" 
    title="Download Your Scoresheets" 
    id="generate_scoresheets" 
-   class="data">Download Your Scoresheets</a>
+   class="button">Download Your Scoresheets</a>
