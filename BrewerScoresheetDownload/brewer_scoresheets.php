@@ -5,7 +5,7 @@
 
 <?php
 include(DB.'brewer.db.php');
-$zipfilenamne=$_SESSION['contestName']+ '_' + $row_brewer['brewerFirstName'] + '_' + $row_brewer['brewerLastName'] + '.zip';
-Print_r ($_SESSION);
-echo $zipfilename;
+// $zipfilenamne=$_SESSION['contestName']+ '_' + $row_brewer['brewerFirstName'] + '_' + $row_brewer['brewerLastName'] + '.zip';
+// Print_r ($_SESSION);
+// echo $zipfilename;
 ?>
