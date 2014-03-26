@@ -1,0 +1,5 @@
+AuthUserFile /path/to/auth/file
+AuthName "Who are you?"
+AuthType Basic
+require user beer
+Options -Indexes
