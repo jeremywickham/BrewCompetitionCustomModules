@@ -1,4 +1,19 @@
 <?php
+/*
+ * Module: 		generate_brewer_scorehseets.php
+ * Description:	This module will generate the zip file and download it for the user.
+ * Info:
+ *
+ * Author:		Jeremy Wickham
+ *		 		jwickham@gmail.com
+ *
+ * Date Created: March 25, 2014
+ * Audit Trail:
+ * 
+ *		March 26, 2014 - Jeremy Wickham
+ *		Added authoring info in at the top of the file.
+ */
+
 require('../paths.php');
 require(CONFIG.'bootstrap.php');
 
@@ -13,13 +28,11 @@ $zipname=$zipfilename;
 // 	echo $contestName;
 // 	Print_r($row_log);
 if($zip->open($zipname, ZIPARCHIVE::CREATE) == TRUE) {
-	//do {
+	do {
 	//for each entry
-	//$zip->addFile('/scoresheets/' + $row_log['id'] + '.pdf');
 	$entryNum = sprintf("%04s",$row_log['id']);
 	$zip->addFile("../scoresheets/".$entryNum.".pdf", $entryNum.".pdf");
-	//} while ($row_log = mysql_fetch_assoc($log));
-
+	} while ($row_log = mysql_fetch_assoc($log));
 	// close zip file
 	$zip->close();
 } else {
