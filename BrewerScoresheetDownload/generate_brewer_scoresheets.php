@@ -1,5 +1,6 @@
 <?php
 /*
+<<<<<<< HEAD
  * Module: 		generate_brewer_scorehseets.php
  * Description:	This module will generate the zip file and download it for the user.
  * Info:
@@ -14,6 +15,21 @@
  *		Added authoring info in at the top of the file.
  */
 
+=======
+ * Module: 	generate_brewer_scorehseets.php
+ * Description:	This module will generate the zip file and download it for the user. 
+ * Info:
+ *
+ * Author:	Jeremy Wickham
+ *		jwickham@gmail.com
+ *
+ * Date Created: March 25, 2014
+ * Audit Trail: 
+ *		March 26, 2014 - Jeremy Wickham
+ *		Added authoring info in at the top of the file. 
+ */
+ 
+>>>>>>> origin/master
 require('../paths.php');
 require(CONFIG.'bootstrap.php');
 
